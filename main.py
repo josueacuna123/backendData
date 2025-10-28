@@ -26,7 +26,11 @@ from predict_all import predict_all
 app = FastAPI(title="DataFlow ML API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "*",  # Puedes reemplazar esto luego por tu dominio de Vercel si quieres restringirlo
+        "https://backenddata-production-9583.up.railway.app",
+        "https://<tu-frontend>.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
