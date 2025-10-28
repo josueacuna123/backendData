@@ -7,10 +7,10 @@ import os
 import io
 import pandas as pd
 import asyncio
-from backend.train_model import train_model
-from backend.routes import models_routes
-from backend.predict_model import *
-from backend.predict_model import *
+from train_model import train_model
+from routes import models_routes
+from predict_model import *
+from predict_model import *
 from fastapi import APIRouter, HTTPException
 import joblib
 from fastapi import APIRouter
